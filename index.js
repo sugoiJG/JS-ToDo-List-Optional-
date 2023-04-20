@@ -8,7 +8,6 @@
 // Allow users to add and delete items from the list
 // Use JavaScript classes to manage the TODO list items
 // Steps:
-
 // Create an HTML file with a text input and button to add new TODO items. Also, add an empty unordered list to the page to hold the TODO items.
 // Create a JavaScript file and link it to the HTML file.
 // Create a class called "TodoList" with an array property to hold the list items and methods to add and delete items from the list.
@@ -19,7 +18,28 @@
 // Add an event listener to each item in the list that calls the delete() method on the TodoList instance with the clicked item.
 // Test the application by adding and deleting items from the TODO list.
 
- 
+
+ class TodoList {
+    constructor(items) {
+        this.items = items;
+    }
+    
+    addItem(item) {
+        this.items.push(item);
+    }
+    
+    removeItem(item) {
+        this.items.splice(index, 1)
+    }
+    renderList(element) {
+    const list = document.getElementsByName("ul")
+    }
+}
+
+let item1 = new TodoList(["Chicken"])
+console.log(item1)
+
+
 
 // HARD
 
